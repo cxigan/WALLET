@@ -20,13 +20,36 @@
                     <div class="diagram-title">Диаграмма расходов</div>
                     <div class="diagram"></div>
                 </div>
-                <div class="legend">
-                    <ul class="legend__list">
-                        <li class="legend__item">
-                            <span class="legend__desc">ФастФуд</span>
-                            <div class="legend__price">2000</div>
-                        </li>
-                    </ul>
+                <div class="canvas">
+                    <div class="canvas">
+                        <div class="legend">
+                            <p class="title"></p>
+                            <ul class="caption-list">
+                                <li class="caption-item">продукты</li>
+                                <li class="caption-item">фастфуд</li>
+                                <li class="caption-item">спорт</li>
+                                <li class="caption-item"></li>
+
+                            </ul>
+                        </div>
+                        <svg class="chart" width="500" height="500" viewBox="0 0 50 50">
+                            <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                            <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                            <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                            <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                            <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                            <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                            <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                        </svg>
+                    </div>
+                    <div class="legend">
+                        <ul class="legend__list">
+                            <li class="legend__item">
+                                <span class="legend__desc">ФастФуд</span>
+                                <div class="legend__price">2000</div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -65,15 +88,15 @@
             <div class="main column" id="editor-column">
                 <form class="editor">
                     <div class="editor__row">
-                        <p class="editor__input-name">Товар</p>
+                        <p class="editor__input-name">Товар:</p>
                         <input type="text" class="editor__input" name="">
                     </div>
                     <div class="editor__row">
-                        <p class="editor__input-name">Цена</p>
+                        <p class="editor__input-name">Цена:</p>
                         <input type="text" class="editor__input" name="">
                     </div>
                     <div class="editor__row">
-                        <p class="editor__input-name">Категория</p>
+                        <p class="editor__input-name">Категория:</p>
                         <select class="editor__select" name="selectCategory" id="selectCategory">
                             <option value="product">Продукты</option>
                         </select>
